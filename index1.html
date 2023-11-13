@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DilaniPlantexAssignment</title>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<!-- section 1 nav bar start -->
+<section>
+<div class="navbar">
+  <img src="Assests/leaf-line.png" height="60px" width="60px">
+   <h2 style="color:green">Plantex</h2>
+    <a href="#" onclick="setActive('home')">Home</a>
+    <a href="#" onclick="setActive('about')">About</a>
+    <a href="#" onclick="setActive('services')">Products</a>
+    <a href="#" onclick="setActive('contact')">FAQs</a>
+    <a href="#" onclick="setActive('contact')">Contact Us</a>
+    <icon onclick="myFunction()"><img src="/home/uki05/Downloads/moon-regular.svg" alt="moon" height="40px" width="40px"></icon>
+
+</div>
+</section>
+<!--  -->
+<!-- image carosal section 2 -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h1>Plants will make your life better.</h1>
+        <h4>Who we really are &
+          why choose us</h4>
+        <div>
+          <!-- <a href="#about" class="btn-get-started scrollto">Explore</a> -->
+          <button type="button" class="btn btn-success">Explore</button>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img">
+        <img src="Assests/home.png" height="500px"width="500px"class="imageone" alt="shopping">
+      </div>
+    </div>
+  </div>
+  
+
+
+</section>
+
+
+
+<!-- section 3 about -->
+<section id="about" class="about">
+  <div class="container">
+
+    <div class="row justify-content-between">
+      <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+        <img src="Assests/about.png" class="img-two" alt="" onclick="zoomInOut(this)">
+      </div>
+      <div class="col-lg-6 pt-5 pt-lg-0">
+        <h1 data-aos="fade-up">Who we really are &
+          why choose us
+          
+         </h1>
+        <p data-aos="fade-up" data-aos-delay="100">
+          <h2>We have over 4000+ unbiased reviews and our
+          customers trust our plant process and delivery
+          service every time</h2>
+          <br>
+          <h4>✅We always deliver on time.</h4>
+          <br>
+        <h4>✅We give you guides to protect and care for your plants</h4>
+          <br>
+        <h4>✅We always come over for a check-up after sale.</h4>
+          <br>
+        <h4>✅100% money back guaranteed</h4>
+         
+         
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<br>
+<br>
+<br>
+
+<!-- gallery -->
+<section>
+<div class="container text-center">
+  <h1>Our Products</h1>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> <h3 style="color:green">Feature</h3></button>
+  <button class="btn active" onclick="filterSelection('cars')"><h3 style="color: green;">Best seller</h3></button>
+  <button class="btn active" onclick="filterSelection('animals')"> <h3 style="color: green;">Latest</h3></button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+  <div class="filterDiv cars">
+    <img src="Assests/istockphoto-1330360581-612x612.jpg" alt="" width="300" height="300">
+    <h1>50$</h1>
+    ⭐⭐⭐
+  </div>
+  <div class="filterDiv colors fruits">
+<img src="Assests/istockphoto-519687055-612x612.jpg" alt="" width="300" height="300">
+<h1>230$</h1>
+⭐⭐⭐
+  </div>
+  <div class="filterDiv cars">
+<img src="Assests/istockphoto-1310577216-612x612.jpg" alt="" width="300" height="300">
+<h1>50$</h1>
+⭐⭐⭐⭐
+  </div>
+  <div class="filterDiv colors">
+    <img src="Assests/istockphoto-1144381259-612x612.jpg" alt="" width="300" height="300">
+    <h1>30$</h1>
+    ⭐⭐⭐
+  </div>
+  <div class="filterDiv cars">
+    <img src="Assests/istockphoto-1144381259-612x612.jpg" alt="" width="300" height="300">
+    <h1>50$</h1>
+    ⭐⭐⭐⭐
+  </div>
+  <div class="filterDiv colors">
+    <img src="Assests/istockphoto-1351864427-612x612.jpg" alt="" width="300" height="300">
+    <h1>50$</h1>
+    ⭐⭐⭐
+  </div>
+      <div class="filterDiv animals">
+      <img src="Assests/istockphoto-1144381259-612x612.jpg" alt="" width="300" height="300">
+      <h1>50$</h1>
+      ⭐⭐⭐
+      </div>
+  <div class="filterDiv animals">
+    <img src="Assests/istockphoto-462186531-612x612.jpg" alt="" width="300" height="300">
+    <h1>50$</h1>
+    ⭐⭐⭐
+  </div>
+  <div class="filterDiv fruits">
+    <img src="Assests/istockphoto-519687055-612x612.jpg" alt="" width="300" height="300">
+    <h1>50$</h1>
+    ⭐⭐⭐⭐
+  </div>
+
+  <div class="filterDiv fruits animals">
+    <img src="Assests/istockphoto-187220831-612x612.jpg" alt="" width="300" height="300">
+    <h1>50$</h1>
+    ⭐⭐⭐
+  </div>
+ 
+  <div class="filterDiv animals">
+    <img src="Assests/istockphoto-1351864427-612x612.jpg" alt="" width="300" height="300">
+    <h1>50$</h1>
+    ⭐⭐⭐⭐⭐
+  </div>
+  <div class="filterDiv animals">
+    <img src="Assests/istockphoto-462186531-612x612.jpg" alt="" width="300" height="300">
+    <h1>50$</h1>
+    ⭐⭐⭐⭐
+  </div>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+
+</div>
+</section>
+  
+  <br>
+  <br>
+  <br>
+  
+ 
+
+
+<!-- faq -->
+
+<section class="faq">
+  
+    <h1 style="color:green; text-align:center"> 
+        Some common questions
+        were often asked
+      </h2> 
+      <div class="layout"> 
+        <div class="accordion"> 
+          <div class="accordion__question"> 
+            <p><h3>
+            My flowers are falling off or dying?
+          </h3></p> 
+          </div> 
+          <div class="accordion__answer"> 
+            <p> There are eight planets in solar system. 
+              Mercury, Venus, Earth, Mars, Jupiter, Saturn, 
+              Uranus, and Neptune. </p> 
+          </div> 
+        </div> 
+      
+        <div class="accordion"> 
+          <div class="accordion__question"> 
+            <p><h3>
+               what causes leaves to become pale? 
+        </h3></p> 
+          </div> 
+      
+          <div class="accordion__answer"> 
+            <p><h3>
+              There are eight planets in solar system. 
+              Mercury, Venus, Earth, Mars, Jupiter, Saturn, 
+              Uranus, and Neptune. 
+            </p></h3> 
+          </div> 
+        </div> 
+        <div class="accordion"> 
+            <div class="accordion__question"> 
+              <p> What causes brown crispy leaves?
+                
+            </p> 
+            </div> 
+        
+            <div class="accordion__answer"> 
+              <p> 
+                There are eight planets in solar system. 
+                Mercury, Venus, Earth, Mars, Jupiter, Saturn, 
+                Uranus, and Neptune. 
+              </p> 
+            </div> 
+          </div> 
+          <div class="accordion"> 
+            <div class="accordion__question"> 
+              <p> 
+                 How do | change the pots?
+            </p> 
+            </div> 
+        
+            <div class="accordion__answer"> 
+              <p> 
+                There are eight planets in solar system. 
+                Mercury, Venus, Earth, Mars, Jupiter, Saturn, 
+                Uranus, and Neptune. 
+              </p> 
+            </div> 
+          </div> 
+          <div class="accordion"> 
+            <div class="accordion__question"> 
+      <p><h3>
+       why are gnats flying around my plant?
+                
+            </p> </h3>
+            </div> 
+        
+            <div class="accordion__answer"> 
+              <p> 
+                There are eight planets in solar system. 
+                Mercury, Venus, Earth, Mars, Jupiter, Saturn, 
+                Uranus, and Neptune. 
+              </p> 
+            </div> 
+          </div> 
+
+
+
+      </div>
+
+</section>
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<!-- team section -->
+
+
+
+
+<!--  -->
+<section>
+<div class="team-section">
+  <h2>Our Amazing Team</h2>
+
+  <div class="team-carousel" id="teamCarousel">
+      <!-- Team Member 1 -->
+      <div class="team-member">
+          <img src="Assests/team1.jpeg" alt="Team Member 1">
+          <h3>Team Member 1</h3>
+          <p>Role and Description</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="team-member">
+          <img src="Assests/team2.jpg" alt="Team Member 2">
+          <h3>Team Member 2</h3>
+          <p>Role and Description</p>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="team-member">
+          <img src="Assests/team3.jpg" alt="Team Member 3">
+          <h3>Team Member 3</h3>
+          <p>Role and Description</p>
+      </div>
+  </div>
+
+  <div class="carousel-bullets" id="bulletContainer"></div>
+</div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+
+ <div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-sm-6 p-3 ">
+      <div class="tabbable">
+          
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+            <h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small>More like our favourite surf spot</small></h4>
+            
+            <iframe width="1800px" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=waikiki+beach&amp;aq=&amp;sll=19.896766,-155.582782&amp;sspn=8.711424,11.854248&amp;ie=UTF8&amp;hq=&amp;hnear=seerani temple Sandilipay&amp;t=m&amp;ll=21.277298,-157.8265&amp;spn=0.015996,0.036478&amp;z=14&amp;output=embed"></iframe><br><br><br>
+            
+            
+        </div> 
+      
+
+       </div>
+
+        </div>
+      </div>
+    </section>  
+
+<!-- contact form -->
+     <section>
+<h1 style="color:black"><center>Contact Form</center></h1>
+<div class="contact-container">
+  <div class="left-section">
+      <!-- Left section content goes here -->
+  </div>
+  <div class="right-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm" onsubmit="validateForm(); return false;">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required maxlength="15">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required minlength="2" maxlength="120"></textarea>
+
+          <input type="submit" value="Submit">
+      </form>
+      <p id="resultMessage"></p>
+  </div>
+</div>
+
+</section>
+
+<!-- map  -->
+<!-- <section>
+<div id="map">
+  
+</div>
+
+</section> -->
+
+
+<!-- Section Footer -->
+<section class="footer">
+ <div class="container text-center">
+ 
+    <footer>
+  
+    <div class="row row-cols-4">
+      <div class="col">
+        <h1><img src="Assests/leaf-outline-leaf-icon-on-white-background-free-vector.jpg" height="40px" width="50px" alt="">
+         Plantax</h1><br><br>
+         <h2>Subscribe to our newsletter</h2>
+      
+         <form id="subscriptionForm" onsubmit="subscribe(); return false;">
+          <input type="email" id="emailInput" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+      </form>
+     
+  
+      </div>
+      <div class="col">
+        <h1>Our Address</h1><br><br>
+        <div><h5>Dutch road,Sandilipay</h5></div>
+  
+      </div>
+      <div class="col">
+      <h1>Contact Us</h1><br><br>
+     <h5>0772587458</h5><br>
+      </div>
+      <div class="col">
+        <h1>We accept all credit cards</h1><br>
+        <div>
+        <img src="Assests/card1.png" height="50x" width="50px">
+        <img src="Assests/card2.png" height="50px" width="50px">
+        <img src="Assests/card3.png" height="50px" width="50px">
+        <img src="Assests/card4.png" height="50px" width="50px">
+  
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+  <script src="AIzaSyBUZ61A_lK8Em8_DQ6kSlGzX-SDBK1lEKg"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>
